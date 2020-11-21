@@ -7,5 +7,18 @@
     "dist"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openfext/vesselize.git",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "ioc",
+    "vesselize"
+  ],
+  "author": "Felix Yang",
+  "bugs": {
+    "url": "https://github.com/openfext/vesselize/issues"
+  },
   "dependencies": {}
 }
