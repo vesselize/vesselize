@@ -1,0 +1,27 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.1.0
+  codecov: codecov/codecov@1.1.1
+jobs:
+  unit-test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: yarn install
+            - run: yarn test
+      - codecov/upload:
+          file: coverage/coverage-final.json
+      - store_artifacts:
+          path: coverage
+
+workflows:
+  test-flow:
+    jobs:
+      - unit-test:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
