@@ -6,6 +6,10 @@ const targetPackage = path.resolve(packagesDir, process.env.TARGET);
 
 const resolve = (p) => path.resolve(targetPackage, p);
 
+const pkg = require(resolve('package.json'));
+
+const external = [...Reflect.ownKeys(pkg.dependencies)];
+
 export default {
   input: [resolve('src/index.ts')],
   output: [
@@ -14,6 +18,7 @@ export default {
       format: 'es',
     },
   ],
+  external,
   plugins: [
     ts({
       tsconfig: path.resolve(__dirname, 'tsconfig.json'),

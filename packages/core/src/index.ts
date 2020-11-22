@@ -1,9 +1,5 @@
-export interface IVesselize {
-  get(): string;
-}
-
-export class Vesselize implements IVesselize {
-  get(): string {
-    return 'Vesselize';
-  }
-}
+export * from './context';
+export * from './scope';
+export * from './aware';
+export * from './provider';
+export * from './vesselize';

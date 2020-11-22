@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@vesselize/core": "^0.1.0-alpha.1",
-    "vue": "^3.0.2"
+    "vue": "^3.0.2",
+    "vuex": "^4.0.0-rc.1"
   }
 }

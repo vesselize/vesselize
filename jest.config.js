@@ -8,7 +8,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
   moduleNameMapper: {
     '^@vesselize/(.*?)$': '<rootDir>/packages/$1/src',
-    vesselize: '<rootDir>/packages/vesselize/src',
+    '^vesselize': '<rootDir>/packages/vesselize/src',
   },
   testMatch: ['<rootDir>/packages/**/tests/**/*spec.[jt]s?(x)'],
 };

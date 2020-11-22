@@ -1,2 +1,3 @@
-export { createVesselize, VueVesselize } from './plugin';
-export { useVessel } from './composition';
+export * from '@vesselize/core';
+export * from './plugin';
+export * from './composition';
