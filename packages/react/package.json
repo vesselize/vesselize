@@ -1,5 +1,5 @@
 {
-  "name": "@vesselize/vue",
+  "name": "@vesselize/react",
   "version": "0.1.0-alpha.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,14 +10,14 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openfext/vesselize.git",
-    "directory": "packages/vue"
+    "directory": "packages/react"
   },
   "keywords": [
     "ioc",
     "vesselize",
-    "vue",
-    "vue-composition-api",
-    "composition-api"
+    "react",
+    "react-hooks",
+    "hooks"
   ],
   "author": "Felix Yang",
   "bugs": {
@@ -27,11 +27,12 @@
     "@vesselize/core": "^0.1.0-alpha.1"
   },
   "peerDependencies": {
-    "vue": "^3.0.0",
-    "vuex": "^4.0.0-rc.1"
+    "react": "^16.8.0"
   },
   "devDependencies": {
-    "vue": "^3.0.0",
-    "vuex": "^4.0.0-rc.1"
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   }
 }

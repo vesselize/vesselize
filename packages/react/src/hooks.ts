@@ -1,15 +1,16 @@
-import { inject } from 'vue';
+import { useContext } from 'react';
 import {
   ProviderToken,
   Context,
   IVesselize,
   ProviderSource,
 } from '@vesselize/core';
-import { INJECT_KEY } from './constant';
-import { VueVesselize } from './vesselize';
+import { VesselizeContext } from './context';
 
-export function useVesselize(key: string | symbol = INJECT_KEY): VueVesselize {
-  return inject(key);
+export function useVesselize(): IVesselize {
+  const { vesselize } = useContext(VesselizeContext);
+
+  return vesselize;
 }
 
 export function useProvider<T>(provide: ProviderToken): ProviderSource<T> {

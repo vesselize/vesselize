@@ -6,8 +6,8 @@ import { ComponentOptions } from 'vue';
 import { mount } from '@vue/test-utils';
 import {
   Context,
-  useVessel,
-  useCtor,
+  useVesselize,
+  useProvider,
   useInstance,
   useAsyncInstance,
   createVesselize,
@@ -49,7 +49,7 @@ const RootApp: ComponentOptions = {
   template: `<div>{{ userId }}</div>`,
 
   setup() {
-    const vesselize = useVessel();
+    const vesselize = useVesselize();
     const userService = useInstance('UserService');
     const asyncUserService = useAsyncInstance('AsyncUserService');
 
@@ -59,7 +59,7 @@ const RootApp: ComponentOptions = {
       foocontext
     );
 
-    const UserService = useCtor('UserService');
+    const UserService = useProvider('UserService');
 
     return {
       vesselize,

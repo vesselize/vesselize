@@ -32,8 +32,38 @@ export interface IVesselize {
 }
 
 export interface VesselizeOptions {
-  ctors?: Ctor[];
   providers: Provider[];
+}
+
+export abstract class AbstractPowerVesselize implements IVesselize {
+  protected vesselize: Vesselize;
+
+  constructor(options: VesselizeOptions) {
+    this.vesselize = new Vesselize(options);
+  }
+
+  getProvider<T>(provide: ProviderToken<T>): ProviderSource<T> {
+    return this.vesselize.getProvider(provide);
+  }
+
+  get<T = any>(provide: ProviderToken<T>): T {
+    return this.vesselize.get(provide);
+  }
+
+  getAsync<T = any>(provide: ProviderToken<T>): Promise<T> {
+    return this.vesselize.getAsync(provide);
+  }
+
+  getInContext<T = any>(provide: ProviderToken<T>, context: Context): T {
+    return this.vesselize.getInContext(provide, context);
+  }
+
+  getInContextAsync<T = any>(
+    provide: ProviderToken<T>,
+    context: Context
+  ): Promise<T> {
+    return this.vesselize.getInContextAsync(provide, context);
+  }
 }
 
 export class Vesselize implements IVesselize {

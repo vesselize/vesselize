@@ -1,3 +1,3 @@
 export * from '@vesselize/core';
-export * from './plugin';
+export * from './vesselize';
 export * from './composition';

@@ -5,7 +5,7 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['packages/*/src/**/*.ts'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   moduleNameMapper: {
     '^@vesselize/(.*?)$': '<rootDir>/packages/$1/src',
     '^vesselize': '<rootDir>/packages/vesselize/src',
