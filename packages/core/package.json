@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openfext/vesselize.git",
+    "url": "git+https://github.com/vesselize/vesselize.git",
     "directory": "packages/core"
   },
   "keywords": [
@@ -18,7 +18,7 @@
   ],
   "author": "Felix Yang",
   "bugs": {
-    "url": "https://github.com/openfext/vesselize/issues"
+    "url": "https://github.com/vesselize/vesselize/issues"
   },
   "dependencies": {}
 }

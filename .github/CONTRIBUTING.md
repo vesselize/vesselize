@@ -8,7 +8,7 @@ To keep this project open and inclusive. Please read and follow our [Code of Con
 
 ## Issue Reporting Guidelines
 
-Always use issue template: <https://github.com/openfext/vesselize/issues/new/choose>.
+Always use issue template: <https://github.com/vesselize/vesselize/issues/new/choose>.
 
 ## Pull Request Guidelines
 

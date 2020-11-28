@@ -1,10 +1,10 @@
 # Vesselize
 
-[![CircleCI](https://circleci.com/gh/openfext/vesselize.svg?style=svg)](https://circleci.com/gh/openfext/vesselize)
-[![codecov](https://codecov.io/gh/openfext/vesselize/branch/main/graph/badge.svg)](https://codecov.io/gh/openfext/vesselize)
-[![License](https://img.shields.io/github/license/openfext/vesselize?style=flat-square)](https://www.npmjs.com/package/@vesselize/vesselize)
-[![Version](https://img.shields.io/npm/v/@vesselize/core.svg)](https://github.com/openfext/vesselize)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/openfext/vesselize)
+[![CircleCI](https://circleci.com/gh/vesselize/vesselize.svg?style=svg)](https://circleci.com/gh/vesselize/vesselize)
+[![codecov](https://codecov.io/gh/vesselize/vesselize/branch/main/graph/badge.svg)](https://codecov.io/gh/vesselize/vesselize)
+[![License](https://img.shields.io/github/license/vesselize/vesselize?style=flat-square)](https://www.npmjs.com/package/@vesselize/vesselize)
+[![Version](https://img.shields.io/npm/v/@vesselize/core.svg)](https://github.com/vesselize/vesselize)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/vesselize/vesselize)
 
 ⛵ A JavaScript IoC container that works seamlessly with Vue.js and React.
 
@@ -174,16 +174,16 @@ function UserProfile() {
 
 [core-version]: https://img.shields.io/npm/v/@vesselize/core.svg
 [core-npm]: https://www.npmjs.com/package/@vesselize/core
-[core-github]: https://github.com/openfext/vesselize/tree/develop/packages/core
+[core-github]: https://github.com/vesselize/vesselize/tree/develop/packages/core
 [vue-version]: https://img.shields.io/npm/v/@vesselize/vue.svg
 [vue-npm]: https://www.npmjs.com/package/@vesselize/vue
-[vue-github]: https://github.com/openfext/vesselize/tree/develop/packages/core
+[vue-github]: https://github.com/vesselize/vesselize/tree/develop/packages/core
 [react-version]: https://img.shields.io/npm/v/@vesselize/react.svg
 [react-npm]: https://www.npmjs.com/package/@vesselize/react
-[react-github]: https://github.com/openfext/vesselize/tree/develop/packages/react
+[react-github]: https://github.com/vesselize/vesselize/tree/develop/packages/react
 [vesselize-version]: https://img.shields.io/npm/v/vesselize.svg
 [vesselize-npm]: https://www.npmjs.com/package/vesselize
-[vesselize-github]: https://github.com/openfext/vesselize/tree/develop/packages/vesselize
+[vesselize-github]: https://github.com/vesselize/vesselize/tree/develop/packages/vesselize
 
 ## Contribution
 

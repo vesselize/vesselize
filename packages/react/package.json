@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openfext/vesselize.git",
+    "url": "git+https://github.com/vesselize/vesselize.git",
     "directory": "packages/react"
   },
   "keywords": [
@@ -21,7 +21,7 @@
   ],
   "author": "Felix Yang",
   "bugs": {
-    "url": "https://github.com/openfext/vesselize/issues"
+    "url": "https://github.com/vesselize/vesselize/issues"
   },
   "dependencies": {
     "@vesselize/core": "^0.1.0-alpha.1"
