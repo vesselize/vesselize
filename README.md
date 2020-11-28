@@ -26,6 +26,10 @@ WIP.
 
 ### Vue.js
 
+#### Prerequisites
+
+- Vue.js >= 3.0.0
+
 #### Installation
 
 ```bash
@@ -99,6 +103,8 @@ export default {
 ```
 
 ### React
+
+- React >= 16.8.0
 
 #### Installation
 
