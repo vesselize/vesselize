@@ -2,8 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/vesselize/vesselize.svg?style=svg)](https://circleci.com/gh/vesselize/vesselize)
 [![codecov](https://codecov.io/gh/vesselize/vesselize/branch/main/graph/badge.svg)](https://codecov.io/gh/vesselize/vesselize)
-[![License](https://img.shields.io/github/license/vesselize/vesselize?style=flat-square)](https://www.npmjs.com/package/@vesselize/vesselize)
-[![Version](https://img.shields.io/npm/v/@vesselize/core.svg)](https://github.com/vesselize/vesselize)
+[![Version](https://img.shields.io/npm/v/@vesselize/core.svg)](https://www.npmjs.com/package/@vesselize/core)
+[![License](https://img.shields.io/github/license/vesselize/vesselize?style=flat-square)](https://github.com/vesselize/vesselize)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/vesselize/vesselize)
 
 ⛵ A JavaScript IoC container that works seamlessly with Vue.js and React.
@@ -16,152 +16,15 @@
 
 ## Docs
 
-<https://vesselize.js.org>
+- [Introduction](https://vesselize.js.org/guide/intro.html)
+- [Getting Started with Vue.js](https://vesselize.js.org/guide/integration-vue.html)
+- [Getting Started with React](https://vesselize.js.org/guide/integration-react.html)
+- [API Reference](https://vesselize.js.org/api/container.html)
 
 ## Examples
 
-WIP.
-
-## Quick Start
-
-### Vue.js
-
-#### Prerequisites
-
-- Vue.js >= 3.0.0
-
-#### Installation
-
-```bash
-yarn add @vesselize/vue
-# or
-npm install @vesselize/vue
-```
-
-#### Basic Usage
-
-Create injectable classes.
-
-```js
-class UserService {
-  async getUser() {}
-}
-
-export default UserService;
-```
-
-Create `VueVesselize` plugin.
-
-```js
-import UserService from './services/UserService';
-
-const vesselize = createVesselize({
-  providers: [UserService],
-});
-
-export default vesselize;
-```
-
-Use plugin in your app.
-
-```js
-import { createApp } from 'vue';
-import vesselize from './vesselize';
-import App from './App.vue';
-
-const app = createApp(App);
-
-app.use(vesselize);
-
-app.mount('#app');
-```
-
-Use instance in components.
-
-```vue
-<template>
-  <div>Name: {{ user.name || '✨' }}</div>
-</template>
-
-<script>
-import { ref } from 'vue';
-import { useInstance } from '@vesselize/vue';
-
-export default {
-  setup() {
-    const user = ref({});
-    const userService = useInstance('UserService');
-
-    userService.getUser((data) => (user.value = data));
-
-    return {
-      user,
-    };
-  },
-};
-</script>
-```
-
-### React
-
-- React >= 16.8.0
-
-#### Installation
-
-```bash
-yarn add @vesselize/react
-# or
-npm install @vesselize/react
-```
-
-#### Basic Usage
-
-Create injectable classes.
-
-```js
-class UserService {
-  async getUser() {}
-}
-
-export default UserService;
-```
-
-Add `VesselizeProvider` in your app.
-
-```jsx
-import React from 'react';
-import { VesselizeProvider } from '@vesselize/react';
-import UserService from './services/UserService';
-import UserProfile from './components/UserProfile';
-
-function App() {
-  return (
-    <VesselizeProvider providers={[UserService]}>
-      <UserProfile />
-    </VesselizeProvider>
-  );
-}
-
-export default App;
-```
-
-Use instance in components.
-
-```jsx
-import React, { useState, useEffect } from 'react';
-import { useInstance } from '@vesselize/react';
-
-function UserProfile() {
-  const [user, setUser] = useState({});
-  const userService = useInstance('UserService');
-
-  useEffect(() => {
-    userService.getUser().then((data) => setUser(data));
-  }, []);
-
-  return <div>Name: {user.name || '✨'}</div>;
-}
-```
+- [vesselize-vue-starter](https://github.com/vesselize/vesselize-vue-starter)
+- [vesselize-react-starter](https://github.com/vesselize/vesselize-react-starter)
 
 ## Packages
 
