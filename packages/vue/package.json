@@ -1,6 +1,6 @@
 {
   "name": "@vesselize/vue",
-  "version": "0.1.0-alpha.2",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -24,7 +24,7 @@
     "url": "https://github.com/vesselize/vesselize/issues"
   },
   "dependencies": {
-    "@vesselize/core": "^0.1.0-alpha.2"
+    "@vesselize/core": "^1.0.0"
   },
   "peerDependencies": {
     "vue": "^3.0.0",
